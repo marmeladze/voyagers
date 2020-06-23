@@ -5,10 +5,6 @@ search_url = "http://www.gutenberg.org/ebooks/search/?query="
 base_url = "http://www.gutenberg.org"
 
 
-# terms => create search url => search => books 
-# path => get book page url => get book page  => document url 
-# document_url => get document url => get_document => text 
-
 def create_search_url(terms):
 	"""
 	Given string terms, returns a search query url for gutenberg
@@ -56,6 +52,7 @@ def get_book_page(book_page_url):
 
 
 def get_document(document_url):
+	print(f'LOG: {document_url}')
 	resp = requests.get(document_url)
 	if resp.ok:
 		return resp.text
