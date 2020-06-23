@@ -1,14 +1,20 @@
 NOTES_DIR = "/home/ziya/Projects/TirexGroup/traveler/src/notes"
 
 def save_note(name: str, content: str) -> bool:
-	with open(f"{NOTES_DIR}/{name}.txt", "w+") as file:
-		file.write(content)
-	return True
+	try:
+		with open(f"{NOTES_DIR}/{name}.txt", "w+") as file:
+			file.write(content)
+		return True
+	except Exception as e:
+		raise e
 
 def get_note(name: str) -> str:
-	with open(f"{NOTES_DIR}/{name}.txt", "r") as file:
-		data = file.read()
-	return data
+	try:
+		with open(f"{NOTES_DIR}/{name}.txt", "r") as file:
+			data = file.read()
+		return data
+	except Exception as e:
+		raise e
 
 
 def show_note_taker() -> None:
@@ -23,7 +29,3 @@ def show_note_taker() -> None:
 		print("Saved")
 	else:
 		print("Error occured")
-
-
-
-show_note_taker()
