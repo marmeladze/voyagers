@@ -19,4 +19,3 @@ def prepare_logger(logs_path, date_format):
 		return abs_path
 
 
-

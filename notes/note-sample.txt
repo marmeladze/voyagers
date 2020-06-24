@@ -1,5 +1,0 @@
-lorem ipsum
-another lorem 
-another line
-this line
-other line

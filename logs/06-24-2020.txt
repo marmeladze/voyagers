@@ -1,1 +1,42 @@
-INFO	06-24-2020 03:10:37.153249		Successfull login: {username}
+INFO	06-24-2020 03:28:50.879617		Successfull login: lorem
+INFO	06-24-2020 03:29:05.717353		Successfull login: hasim
+INFO	06-24-2020 03:36:50.721597		Successfull login: lorem
+INFO	06-24-2020 03:37:11.432949		Successfull login: manga
+INFO	06-24-2020 03:39:44.954761		Successfull login: faruq
+INFO	06-24-2020 03:39:47.913759		faruq requested action SB
+INFO	06-24-2020 04:04:00.816025		Successfull login: lorem
+INFO	06-24-2020 04:04:06.013118		lorem requested action SB
+INFO	06-24-2020 04:05:28.350220		Successfull login: lorem
+INFO	06-24-2020 04:05:30.659194		lorem requested action SB
+INFO	06-24-2020 04:05:46.193109		Successfull login: lorem
+INFO	06-24-2020 04:05:48.249366		lorem requested action SB
+INFO	06-24-2020 12:18:10.868603		Successfull login: lorem
+INFO	06-24-2020 12:18:14.850593		Successfull login: dfkg
+INFO	06-24-2020 12:19:29.176756		Successfull login: ziya
+INFO	06-24-2020 12:25:16.645328		ziya requested action SB
+INFO	06-24-2020 12:55:01.345363		Successfull login: lorem
+INFO	06-24-2020 12:55:03.630742		lorem requested action SB
+INFO	06-24-2020 12:59:46.318946		Successfull login: lorem
+INFO	06-24-2020 12:59:50.315191		lorem requested action SB
+INFO	06-24-2020 13:00:05.485270		lorem requested action RB
+INFO	06-24-2020 13:01:44.142537		lorem requested action TN
+INFO	06-24-2020 14:01:21.073606		Successfull login: asdfsdf
+INFO	06-24-2020 14:01:25.216087		asdfsdf requested action S
+INFO	06-24-2020 14:01:57.868295		Successfull login: saf
+INFO	06-24-2020 14:02:00.207909		saf requested action SB
+INFO	06-24-2020 14:02:12.883745		Successfull login: asfg
+INFO	06-24-2020 14:02:15.275523		asfg requested action SB
+INFO	06-24-2020 14:44:08.618432		Successfull login: ziya
+INFO	06-24-2020 14:44:11.421202		ziya requested action TN
+INFO	06-24-2020 14:45:02.950351		Successfull login: lorem
+INFO	06-24-2020 14:45:06.115977		lorem requested action TN
+INFO	06-24-2020 14:45:49.833153		Successfull login: lorem
+INFO	06-24-2020 14:45:52.275559		lorem requested action TN
+INFO	06-24-2020 14:48:45.250194		Successfull login: lorem
+INFO	06-24-2020 14:48:47.203762		lorem requested action TN
+INFO	06-24-2020 14:50:38.781089		Successfull login: fsd
+INFO	06-24-2020 14:50:40.511202		fsd requested action TN
+INFO	06-24-2020 14:55:30.503105		Successfull login: lorem
+INFO	06-24-2020 14:55:32.425575		lorem requested action TN
+INFO	06-24-2020 14:56:55.604355		Saved note successfully to {app.settings.notes_folder}/{normalized_title}.txt
+INFO	06-24-2020 14:57:18.922906		lorem requested action SB
