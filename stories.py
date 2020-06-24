@@ -35,9 +35,7 @@ def main_page_story(app):
 	app.logger.log(f"{username} requested action {command}")
 	return app
 
-# terms => create search url => search => books 
-# path => get book page url => get book page  => document url 
-# document_url => get document url => get_document => text 
+
 def search_book_at_gutenberg_story(app):
 	term = com.get_input("Search")
 	search_url = gsdk.create_search_url(term)
