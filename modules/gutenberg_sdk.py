@@ -37,7 +37,7 @@ def search(url):
 			print(f"{len(items)} results found")
 			return results
 		else:
-			print("Zero results found")
+			print("No results found")
 	else:
 		print("Error while connecting to url -> {url}")
 
