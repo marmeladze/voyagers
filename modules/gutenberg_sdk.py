@@ -52,7 +52,7 @@ def get_book_page(book_page_url):
 
 
 def get_document(document_url):
-	print(f'[x] Fetching document: {document_url}')
+	print(f'[x] Fetching document at {document_url}')
 	resp = requests.get(document_url)
 	if resp.ok:
 		return resp.text
