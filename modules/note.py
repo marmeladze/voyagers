@@ -8,7 +8,6 @@ def get_note(name: str) -> str:
 		data = file.read()
 	return data
 
-
 def build_note(rows=5) -> str:
 	i = rows
 	lines = []
