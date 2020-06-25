@@ -46,7 +46,7 @@ def search_book_at_gutenberg_story(app):
 	return app
 
 def get_book_from_gutenberg_story(app):
-	path = com.get_input("Book ID")
+	path = com.get_input("Book Path")
 	book_url = gsdk.create_book_page_url(path)
 	document_path = gsdk.get_book_page(book_url)
 	document_url = gsdk.create_document_url(document_path)
