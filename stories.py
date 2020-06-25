@@ -1,9 +1,12 @@
+import os
 import pydoc
 import datetime as dt
+
 from modules import gutenberg_sdk as gsdk
 from modules import commons as com 
 from modules import authentication as auth
 from modules import note
+from modules import search
 
 def auth_user_story(app):
 	username = com.get_input("Enter username")
@@ -37,23 +40,25 @@ def main_page_story(app):
 
 
 def search_book_at_gutenberg_story(app):
-	term = com.get_input("Search")
-	search_url = gsdk.create_search_url(term)
-	books = gsdk.search(search_url)
-	text = com.build_results(books)
-	pydoc.pager(text)
-	app.session.variables['last_action'] = '_MAIN_PAGE'
-	return app
+    username = app.session.variables['user_name']
+    term = com.get_input("Search")
+    search_url = gsdk.create_search_url(term)
+    books = gsdk.search(search_url)
+    text = com.show_gutenberg_book_search_results(books)
+    pydoc.pager(text)
+    app.session.variables['last_action'] = '_MAIN_PAGE'
+    return app
 
 def get_book_from_gutenberg_story(app):
-	path = com.get_input("Book Path")
-	book_url = gsdk.create_book_page_url(path)
-	document_path = gsdk.get_book_page(book_url)
-	document_url = gsdk.create_document_url(document_path)
-	document = gsdk.get_document(document_url)
-	pydoc.pager(document)
-	app.session.variables['last_action'] = '_MAIN_PAGE'
-	return app
+    username = app.session.variables['user_name']
+    path = com.get_input("Book Path")
+    book_url = gsdk.create_book_page_url(path)
+    document_path = gsdk.get_book_page(book_url)
+    document_url = gsdk.create_document_url(document_path)
+    document = gsdk.get_document(document_url)
+    pydoc.pager(document)
+    app.session.variables['last_action'] = '_MAIN_PAGE'
+    return app
 
 
 def get_geolocation_info_story(app):
@@ -64,18 +69,29 @@ def chemical_training_story(app):
 	return app
 
 def take_note_story(app):
-	title = com.get_input("Title")
-	contents = note.build_note(app.settings.editor_lines)
-	normalized_title = com.normalize_text(title)
-	saved = note.save_note(normalized_title, contents, folder=app.settings.notes_folder)
-	if saved:
-		app.logger.log(f"Saved note successfully to {app.settings.notes_folder}/{normalized_title}.txt")
-		print("Message saved successfuly")
-		app.session.variables['last_action'] = '_MAIN_PAGE'
-	return app
+    username = app.session.variables['user_name']
+    title = com.get_input("Title")
+    contents = note.build_note(app.settings.editor_lines)
+    normalized_title = com.normalize_text(title)
+    saved = note.save_note(normalized_title, contents, folder=app.settings.notes_folder)
+    if saved:
+    	app.logger.log(f"{username} created note: {app.settings.notes_folder}/{normalized_title}.txt")
+    	print("Message saved successfuly")
+    	app.session.variables['last_action'] = '_MAIN_PAGE'
+    return app
 
 def search_note_story(app):
-	return app
+    username = app.session.variables['user_name']
+    documents = os.listdir(app.settings.notes_folder)
+    keyword = com.get_input("keyword to search")
+    results = search.find_pattern(keyword, documents)
+    app.logger.log(f"{username} searched for {keyword}")
+    print(f'{len(results)} results found')
+    text = com.show_note_search_results(results)
+    text = f"Showing results for {keyword}\n{text}"
+    pydoc.pager(text)
+    app.session.variables['last_action'] = '_MAIN_PAGE'    
+    return app
 
 def read_note_story(app):
 	return app
