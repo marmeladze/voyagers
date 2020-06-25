@@ -1,0 +1,35 @@
+INFO	06-25-2020 06:17:39.240205		Successfull login: lorem
+INFO	06-25-2020 06:17:43.876995		lorem requested action SN
+INFO	06-25-2020 06:18:06.427106		Successfull login: sdfds
+INFO	06-25-2020 06:18:08.178674		sdfds requested action SN
+INFO	06-25-2020 06:18:10.325990		sdfds searched for keyword
+INFO	06-25-2020 06:19:57.188205		Successfull login: dfsdf
+INFO	06-25-2020 06:19:58.755913		dfsdf requested action SN
+INFO	06-25-2020 06:20:01.072096		dfsdf searched for keyword
+INFO	06-25-2020 06:20:40.040572		Successfull login: sdfsd
+INFO	06-25-2020 06:20:41.588349		sdfsd requested action SN
+INFO	06-25-2020 06:20:42.964471		sdfsd searched for keyword
+INFO	06-25-2020 06:21:41.947266		Successfull login: asdsd
+INFO	06-25-2020 06:21:43.322691		asdsd requested action SN
+INFO	06-25-2020 06:21:45.567913		asdsd searched for only
+INFO	06-25-2020 06:22:21.421364		Successfull login: sdfd
+INFO	06-25-2020 06:22:23.109930		sdfd requested action SN
+INFO	06-25-2020 06:22:24.789146		sdfd searched for only
+INFO	06-25-2020 06:24:08.370040		Successfull login: ziya
+INFO	06-25-2020 06:24:10.350798		ziya requested action SN
+INFO	06-25-2020 06:24:12.859738		ziya searched for only
+INFO	06-25-2020 06:26:19.205915		Successfull login: ziya
+INFO	06-25-2020 06:26:21.462719		ziya requested action SN
+INFO	06-25-2020 06:26:23.526144		ziya searched for only
+INFO	06-25-2020 06:26:47.143056		Successfull login: ziya
+INFO	06-25-2020 06:26:49.456632		ziya requested action SN
+INFO	06-25-2020 06:26:53.321704		ziya searched for only
+INFO	06-25-2020 06:28:12.380806		Successfull login: ziya
+INFO	06-25-2020 06:28:13.988654		ziya requested action SN
+INFO	06-25-2020 06:28:15.830275		ziya searched for only
+INFO	06-25-2020 09:28:45.814790		Successfull login: ziya
+INFO	06-25-2020 09:28:51.570416		ziya requested action TN
+INFO	06-25-2020 09:32:45.890903		ziya created note: /home/ziya/Projects/TirexGroup/traveler/src/notes//quarter-of-my-heart-is-havana.txt
+INFO	06-25-2020 09:32:51.550567		ziya requested action SN
+INFO	06-25-2020 09:32:53.877653		ziya searched for qarğa
+INFO	06-25-2020 09:33:08.291735		ziya requested action QUIT
