@@ -33,7 +33,7 @@ def highlighted_word(text, word, highlighter=colorize_word):
 def show_note_search_results(results):
     response = ""
     for result in results:
-        response += f'{result["document"]}::{result["line_no"]}\t\t'
+        response += f'{result["document"]}@{result["line_no"]: {<25}}\t\t'
         response += f'{highlighted_word(result["line"], result["pattern"])}\n'
     return response
 
